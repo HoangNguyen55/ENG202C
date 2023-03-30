@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+/* id */
+#overview {
+    margin: 6vw 6vh;
+    padding: 4vw 4vh;
+    background-color: rgba(0, 125, 244, 0.5);
+}
