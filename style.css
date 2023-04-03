@@ -1,3 +1,7 @@
+:root {
+    --font-size: min(3.7vh, 2.9vw);
+}
+
 body {
     background-color: black;
     color: white;
@@ -7,9 +11,29 @@ header {
     text-align: center;
 }
 
+div {
+    font-size: var(--font-size);
+    margin: 6vw 6vh;
+    max-width: 35vw;
+    max-height: 80vh;
+    padding: 2vh 4vw;
+}
+
+h4 {
+    font-size: var(--font-size);
+}
+
+header {
+    font-size: var(--font-size);
+    padding: 50vh 0;
+    text-align: center;
+}
+
 /* id */
 #overview {
-    margin: 6vw 6vh;
-    padding: 4vw 4vh;
     background-color: rgba(0, 125, 244, 0.5);
+}
+
+#background {
+    background-color: blueviolet;
 }
