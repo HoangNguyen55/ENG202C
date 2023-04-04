@@ -1,5 +1,5 @@
 :root {
-    --font-size: min(3.7vh, 2.9vw);
+    --font-size: min(3.7vh, 2vw);
 }
 
 body {
@@ -9,6 +9,11 @@ body {
 
 header {
     text-align: center;
+    position: sticky;
+    background-color: red;
+    top: 2vh;
+    margin: 2vh 2vw;
+    padding: 1vh;
 }
 
 div {
@@ -23,8 +28,8 @@ h4 {
     font-size: var(--font-size);
 }
 
-header {
-    font-size: var(--font-size);
+h1 {
+    font-size: calc(var(--font-size) * 1.7);
     padding: 50vh 0;
     text-align: center;
 }
