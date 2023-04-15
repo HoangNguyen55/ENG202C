@@ -10,10 +10,30 @@
     display: flex;
 }
 
-#title-place-holder{
+#project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: green;
     flex-basis: 50%;
     flex-grow: 2;
+}
+
+#project-title a {
+    text-decoration: none;
+}
+
+#project-title h1 {
+    color: white;
+    background-color: cyan;
+    max-height: 5vh;
+    max-width: 50vw;
+    text-align: center;
+    line-height: 5vh;
+    font-size: calc(var(--font-size) * 1.2);
+    animation: 1s ease-in-out 0.1s slidein;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * 9 * -1s);
 }
 
 #links {
@@ -30,6 +50,7 @@
 }
 
 #toc {
+    font-size: calc(var(--font-size) * 0.6);
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -51,6 +72,7 @@
 
 #dropdown-menu a {
   color: black;
+  font-size: var(--font-size);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -60,61 +82,13 @@
 #dropdown-menu a:hover {background-color: #ddd;}
 #toc:hover {background-color: #3e8e41;}
 
-/* #header {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-}
-
-#header>#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    min-height: 5vh;
-    background-color: red;
-    z-index: -1;
-}
-
-#toc {
-    background-color: aqua;
-    text-align: center;
-}
-
-#links {
-    background-color: beige;
-    text-align: center;
-}
-
-#project-title {
-    background-color: green;
-    top: 0;
-    text-align: center;
-    font-size: calc(var(--font-size) * 0.4);
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * 9 * -1s);
-}
-
 @keyframes slidein {
-    from {
-        font-size: calc(var(--font-size) * 0.7);
-    }
-    to {
-        font-size: calc(var(--font-size) * 0.4);
-    }
-} */
-
-#project-title {
-    background-color: purple;
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
+  from {
+    font-size: calc(var(--font-size) * 1.7);
+    line-height: 100vh;
+  }
+  to {
+    font-size: calc(var(--font-size) * 1.2);
+    line-height: 5vh;
+  }
 }

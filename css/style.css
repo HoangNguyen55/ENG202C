@@ -2,6 +2,7 @@
     --font-size: min(3.4vh, 2vw);
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
