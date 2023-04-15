@@ -1,6 +1,6 @@
 // wrap every div in a wrapper div so that every div is the size of the screen
 {
-  const ele = document.querySelectorAll('body > div');
+  const ele = document.querySelectorAll('div.body');
 
   for (let i = 0, n=ele.length; i < n; i++) {
     const wrapper = document.createElement('div');
