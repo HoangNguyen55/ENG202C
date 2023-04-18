@@ -108,7 +108,8 @@
 
 #drone {
     position: absolute;
-    left: -50vw;
+    top: 1px;
+    left: 1px;
     z-index: 3;
     animation: 5s ease-in-out 0.1s droneflyby;
     animation-iteration-count: infinite;
@@ -116,10 +117,10 @@
 
 @keyframes droneflyby {
 	from {
-		left: 100vw;
+		transform: translate(100vw);
 	}
 
 	to {
-		left: -50vw;
+		transform: translate(-50vw);
 	}
 }
