@@ -33,11 +33,24 @@ body {
 
 .body #image-wrapper {
     margin: 6vh 0;
-    background-color: green;
+}
+
+.body #images #credit {
+    color: rgba(0, 0, 0, 0.50);
+}
+.body #images #credit>a {
+    text-decoration: none;
+}
+
+.body #images img {
+    object-fit: scale-down; 
+    width: 100%;
+    height: 100%;
 }
 
 .body #images {
-    top: 5vh;
+    top: 15vh;
+    max-width: 39vw;
     position: sticky;
 }
 
@@ -54,3 +67,14 @@ body {
 }
 
 /* id */
+#references {
+    max-width: 100vw;
+    font-size: var(--font-size);
+    white-space: pre-wrap;
+    background-color: rgba(0, 125, 244, 0.5);
+    text-align: justify;
+    text-justify: inter-word;
+    min-height: 80vh;
+    margin: 6vh 6vw;
+    padding: 2vh 4vw;
+}
