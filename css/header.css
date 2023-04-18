@@ -6,7 +6,7 @@
     max-height: 5vh;
     min-width: 100vw;
     z-index: 2;
-    background: red;
+    background: royalblue; 
     display: flex;
 }
 
@@ -14,9 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: green;
     flex-basis: 50%;
     flex-grow: 2;
+    text-shadow: 0;
 }
 
 #project-title a {
@@ -24,22 +24,25 @@
 }
 
 #project-title h1 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
     color: white;
-    background-color: cyan;
+    /*  background-color: cyan;*/
     max-height: 5vh;
     max-width: 50vw;
     text-align: center;
     line-height: 5vh;
-    font-size: calc(var(--font-size) * 1.2);
+    font-size: calc(var(--font-size));
     animation: 1s ease-in-out 0.1s slidein;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * 9 * -1s);
+    animation-delay: calc(var(--scroll) * 11 * -1s);
 }
 
 #links {
     display: flex;
     justify-content: flex-end;
-    background-color: blue;
+    /* background-color: blue; */
     flex-basis: 25%;
     flex-grow: 1;
 }
@@ -54,7 +57,6 @@
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    background-color: royalblue;
     flex-basis: 25%;
     flex-grow: 1;
 }
@@ -62,7 +64,7 @@
 #dropdown-menu {
     display: none;
     position: absolute;
-    background-color: green;
+    background-color: #6941e1;
     top: 5vh;
     left: 0;
     width: 25%;
@@ -71,7 +73,7 @@
 }
 
 #dropdown-menu a {
-  color: black;
+  color: white;
   font-size: var(--font-size);
   padding: 12px 16px;
   text-decoration: none;
@@ -79,16 +81,27 @@
 }
 
 #toc:hover #dropdown-menu {display: block;}
-#dropdown-menu a:hover {background-color: #ddd;}
-#toc:hover {background-color: #3e8e41;}
+#dropdown-menu a:hover {background-color: #5224dc;}
+#toc:hover {background-color: #6941e1;}
 
 @keyframes slidein {
   from {
-    font-size: calc(var(--font-size) * 1.7);
+    font-size: calc(var(--font-size) * 1.5);
+    text-shadow: -1px 1px 2px #000,
+		 1px 1px 2px #000,
+		 1px -1px 0 #000,
+		 -1px -1px 0 #000;
     line-height: 100vh;
   }
+  70% {
+    text-shadow: -1px 1px 2px #000,
+		 1px 1px 2px #000,
+		 1px -1px 0 #000,
+		 -1px -1px 0 #000;
+  }
   to {
-    font-size: calc(var(--font-size) * 1.2);
+    font-size: calc(var(--font-size));
     line-height: 5vh;
+    text-shadow: 0;
   }
 }
